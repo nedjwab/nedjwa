@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Dancing+Script:wght@500&family=Roboto+Slab&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-* {
- 
-    color:#9A9B87
+.line {
+    height: 95px;
+    border-left: 1px solid #C38888;
 }
+  

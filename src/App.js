@@ -1,10 +1,24 @@
 import './App.css';
-import Navbar from './modules/Navbar';
+import Sidebar from './components/sidebar';
+import Home from './components/Home'
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Sidebar />
+      <Home />
+      jddddddddddddddddd
+      ddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddd <br></br>
+      dddddddddddddddd
+      jddddddddddddddddd
+      ddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddd
+      dddddddddddddddd
+      jddddddddddddddddd
+      ddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddd
+      dddddddddddddddd
     </>
   );
 }
