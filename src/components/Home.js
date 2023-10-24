@@ -69,7 +69,7 @@ const Home = () => (
           <br />
           I can help you build a product , feature or website.
         </p>
-        <button  data-aos="flip-left" >
+        <button className='w-28 h-28 px-3 bg-blu rounded-full text-para'  data-aos="flip-left" >
           Let's Get In Touch
         </button>
       </div>

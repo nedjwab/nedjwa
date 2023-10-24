@@ -5,10 +5,10 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'back':'#F2E6D8',
-      'para':'#594A3C',
+      'back':'#000000',
+      'para':'#F2E6D8',
       'span':'#A67153',
-      'blu':'#615F6D',
+      'blu':'#608FB7',
     },
     extend: {
         fontFamily: {
