@@ -1,6 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Navbar from './Navbar';
+import ParticlesBackground from './ParticlesBackground';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -28,25 +29,26 @@ AOS.init({
 
 
 const Home = () => (
+  <>
   <section className='bg-back  flex flex-col h-128'>
     <Navbar />
     <div className="mt-16 text-center container flex flex-col justify-items-center items-center font-Dancing  h-5/6">
       <div className="ml-2">
-        <p data-aos="fade-right" className="text-para text-5xl">
+        <p data-aos="fade-right" className="text-para text-5xl ">
           Hello there,
           This is
           {' '}
           {'\n'}
-          <span className="text-span text-7xl mb-11"> Nedjwa.</span>
+          <span className="text-span text-5xl mb-11"> Nedjwa.</span>
         </p>
         <div className="h-8 mt-7 mb-9">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString('<span style="color: #A67153;;font-size:40px;">UI/UX Designer </span>')
+                .typeString('<span style="color: #A67153;;font-size:30px;">UI/UX Designer </span>')
                 .pauseFor(10)
                 .deleteAll()
-                .typeString('<span style="color:#A67153;;font-size:40px;">Full-Stack web developper </span>')
+                .typeString('<span style="color:#A67153;;font-size:30px;">Full-Stack web developper </span>')
                 .start();
             }}
           />
@@ -74,7 +76,9 @@ const Home = () => (
         </button>
       </div>
     </div>
+    <ParticlesBackground />
   </section>
+  </>
 );
 
 
