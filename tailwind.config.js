@@ -8,7 +8,7 @@ module.exports = {
       'back':'#000000',
       'para':'#F2E6D8',
       'span':'#A67153',
-      'blu':'#608FB7',
+      'blu':'#926E61',
     },
     extend: {
         fontFamily: {
