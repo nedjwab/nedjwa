@@ -5,7 +5,6 @@ import {
 import {
   SiTailwindcss, SiReduxsaga, SiBootstrap, SiPostman, SiAdobexd, SiAdobephotoshop,
 } from 'react-icons/si';
-import { AiOutlineDownload } from 'react-icons/ai';
 import { FiFigma } from 'react-icons/fi';
 import pic from './portfolio.jpg';
 
@@ -103,19 +102,14 @@ const About = () => {
                   <SiAdobexd color="#A67153" fill="#A67153" className="mr-4" />
                   <SiAdobephotoshop className="mr-4" />
                 </div>
-                <div className=''>
-            <button onClick={onButtonClick} type="submit" className="text-xl flex flex-row p-3 x">
-              <span />
-              <span />
-              <span />
-              <span />
-              <AiOutlineDownload className="mt-1 mr-1 w-28 h-28 px-3" />
-              Download CV
-            </button>
-            </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className=''>
+            <button onClick={onButtonClick} type="submit" className="text-xl absolute right-64">
+              Download CV
+            </button>
         </div>
       </div>
     </>
