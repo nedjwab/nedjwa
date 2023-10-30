@@ -102,14 +102,14 @@ const About = () => {
                   <SiAdobexd color="#A67153" fill="#A67153" className="mr-4" />
                   <SiAdobephotoshop className="mr-4" />
                 </div>
+            <div className='absolute right-64'>
+            <button onClick={onButtonClick} type="submit" className="text-xl">
+              Download CV
+            </button>
+            </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className=''>
-            <button onClick={onButtonClick} type="submit" className="text-xl absolute right-64">
-              Download CV
-            </button>
         </div>
       </div>
     </>
