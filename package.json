@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "flowbite": "^1.8.1",
+    "framer-motion": "^10.16.5",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.11.2",
     "react-awesome-shapes": "^0.1.12",
