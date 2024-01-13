@@ -1,0 +1,58 @@
+/* Projects.css */
+
+.st-section-heading.st-style1 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 41px;
+}
+
+.st-section-heading.st-style1 .st-section-heading-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #B9848C;
+    position: relative;
+    z-index: 10;
+    letter-spacing: 1px;
+}
+
+.st-section-heading.st-style1 .st-section-heading-title::before {
+    content: "";
+    position: absolute;
+    background-color: #3f4551;
+    width: 170px;
+    height: 2px;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.st-section-heading.st-style1 .st-section-heading-title::after {
+    content: "";
+    position: absolute;
+    background-color: #B9848C;
+    width: 70px;
+    height: 2px;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.st-section-heading.st-style1 .st-section-heading-subtitle {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 90px;
+    font-weight: 700;
+    color: rgba(21, 27, 41, 0.5);
+    margin: 0;
+    margin-top: -17px;
+    width: 100%;
+}
+

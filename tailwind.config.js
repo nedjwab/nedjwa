@@ -18,6 +18,7 @@ module.exports = {
       },
       height: {
         '128': '730px',
+        '119':'663px'
       }
     },
   },
