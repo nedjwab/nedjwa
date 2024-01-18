@@ -7,7 +7,7 @@ const Sidebar = () => (
     <aside className="mt-96 ml-9 hidden xl:block fixed" aria-label="Sidebar">
       <div className="line mt-5 ml-5 mb-9" />
       <div className="rounded text-2xl">
-        <ul className="text-blu space-y-2 flex flex-row xl:block">
+        <ul className="text-para space-y-2 flex flex-row xl:block">
           <li>
             <a href="https://www.linkedin.com/in/nedjwa-bouraiou/" className=" flex items-center p-2 text-2xl font-normal text-gray-900 rounded-lg dark:text-white mb-1 ">
               <BsLinkedin />
@@ -30,3 +30,4 @@ const Sidebar = () => (
 );
 
 export default Sidebar;
+

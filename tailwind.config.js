@@ -7,8 +7,8 @@ module.exports = {
     colors: {
       'back':'#000000',
       'para':'#F2E6D8',
-      'span':'#A67153',
-      'blu':'#926E61',
+      'span':'#B9848C',
+      'blu':'#806491',
     },
     extend: {
         fontFamily: {
@@ -18,6 +18,7 @@ module.exports = {
       },
       height: {
         '128': '730px',
+        '119':'800px'
       }
     },
   },

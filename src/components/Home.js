@@ -30,7 +30,7 @@ AOS.init({
 
 const Home = () => (
   <>
-  <section className='bg-back  flex flex-col h-128'>
+  <section className='bg-back flex flex-col h-128 mt-0'>
     <Navbar />
     <div className="mt-16 text-center container flex flex-col justify-items-center items-center font-Dancing  h-5/6">
       <div className="ml-2">
@@ -45,10 +45,10 @@ const Home = () => (
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString('<span style="color: #A67153;;font-size:30px;">UI/UX Designer </span>')
+                .typeString('<span style="color: #B9848C;;font-size:30px;">UI/UX Designer </span>')
                 .pauseFor(10)
                 .deleteAll()
-                .typeString('<span style="color:#A67153;;font-size:30px;">Full-Stack web developper </span>')
+                .typeString('<span style="color:#B9848C;;font-size:30px;">Full-Stack web developper </span>')
                 .start();
             }}
           />
@@ -71,7 +71,7 @@ const Home = () => (
           <br />
           I can help you build a product , feature or website.
         </p>
-        <button className='w-28 h-28 px-3 bg-blu rounded-full text-para '  data-aos="flip-left" >
+        <button className='w-28 h-28 px-3 bg-blu rounded-full text-para'  data-aos="flip-left" >
           Let's Get In Touch
         </button>
       </div>
