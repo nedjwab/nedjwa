@@ -54,7 +54,7 @@ const Home = () => (
           />
         </div>
         <p data-aos="zoom-in" className="text-para text-3xl font-light leading-10 mt-13 xl:mt-20 mb-16">
-          i&apos;m a
+          I&apos;m a
           {' '}
           <span className="text-span">computer scientist</span>
           {' '}
@@ -76,7 +76,6 @@ const Home = () => (
         </button>
       </div>
     </div>
-   <ParticlesBackground />
   </section>
   </>
 );
