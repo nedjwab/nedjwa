@@ -1,4 +1,4 @@
-/* Projects.css */
+/* Title */
 :root {
     --clr: #B9848C; /* Define a variable named --main-color with a value of #3498db */
 }
@@ -59,9 +59,7 @@
     width: 100%;
 }
 
-/* Button */
-
-
+/* Github Button */
   .btn {
     position: relative;
     width: 17%;

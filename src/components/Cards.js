@@ -57,6 +57,8 @@ const Card = ({ src, alt, descriptions, githubLink }) => {
           position: "absolute",
           top: 0,
           left: 0,
+          margin:"6px",
+          textAlign:"center",
           right: 0,
           bottom: 0,
           display: "flex",
@@ -70,7 +72,7 @@ const Card = ({ src, alt, descriptions, githubLink }) => {
           {descriptions[currentDescriptionIndex]}
         </p>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <button className="w-28 h-28 px-3 bg-blu rounded-full text-para">
+          <button className="">
             GitHub
           </button>
         </a>
@@ -90,10 +92,9 @@ const slides = [
         src={pic1}
         alt="1"
         descriptions={[
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-          "Project 1 Description 2",
+          "a music festival website. This project consists of four sections and a link to an about page. I added some cool animation and transitions using CSS. Also, I made a hamburger button for the mobile version using javascript. the Dj's section is added dynamically using javaScript also well.",
         ]}
-        githubLink="https://github.com/yourusername/project1"
+        githubLink="https://github.com/nedjwab/E-ticket-Capstone"
       />
     ),
   },
@@ -103,8 +104,8 @@ const slides = [
       <Card
         src={pic2}
         alt="2"
-        descriptions={["Project 2 Description 1", "Project 2 Description 2"]}
-        githubLink="https://github.com/yourusername/project2"
+        descriptions={[" it is a movie website which fetches movies from TVmaze API and displays them, where we used Microverse involvement API for adding likes, comments and reservations"]}
+        githubLink="https://github.com/principles31/Javascript_Capstone_Project"
       />
     ),
   },
@@ -114,8 +115,8 @@ const slides = [
       <Card
         src={pic3}
         alt="3"
-        descriptions={["Project 3 Description 1", "Project 3 Description 2"]}
-        githubLink="https://github.com/yourusername/project3"
+        descriptions={["phi industries is a simple website for a medical company, Users can find more information about phi-industries and the medicines they produce."]}
+        githubLink="https://github.com/nedjwab/phi-industries"
       />
     ),
   },
@@ -125,8 +126,8 @@ const slides = [
       <Card
         src={pic4}
         alt="4"
-        descriptions={["Project 4 Description 1", "Project 4 Description 2"]}
-        githubLink="https://github.com/yourusername/project4"
+        descriptions={["Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to Make simple calculation."]}
+        githubLink="https://github.com/nedjwab/math-magicians"
       />
     ),
   },
@@ -136,8 +137,8 @@ const slides = [
       <Card
         src={pic5}
         alt="5"
-        descriptions={["Project 5 Description 1", "Project 5 Description 2"]}
-        githubLink="https://github.com/yourusername/project5"
+        descriptions={["a responsive portfolio. the projects section is added dynamically using a javaScript function. each project's card has a pop-up window containing the project details and a live link. the last section is the contact me form where I used Javascript to validate the form"]}
+        githubLink="https://github.com/nedjwab/MyPortfolio"
       />
     ),
   },
@@ -147,8 +148,8 @@ const slides = [
       <Card
         src={pic6}
         alt="6"
-        descriptions={["Project 6 Description 1", "Project 6 Description 2"]}
-        githubLink="https://github.com/yourusername/project6"
+        descriptions={["a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what."]}
+        githubLink="https://github.com/nedjwab/my-budget"
       />
     ),
   },
@@ -163,12 +164,15 @@ const slides = [
   };
 
   return (
-    <div style={{ width: "65%", height: "420px", margin: "0 0 0 25%" }}>
+    <>
+    <div style={{ width: "65%", height: "420px", margin: "0 0 0 25%" }} data-aos="fade-down">
       <Carousel
         slides={slides}
         goToSlide={currentSlide}
         showNavigation={false} // Hide default navigation
       />
+    </div>
+    <div>
       {currentSlide > 0 && (
         <button
         style={{
@@ -210,12 +214,13 @@ const slides = [
         }}
         onMouseOver={(e) => e.target.style.background = "#B9848C"}  // Change background on hover
         onMouseOut={(e) => e.target.style.background = "transparent"}  // Reset background on mouse out
-          onClick={handlePrevious}
+          onClick={handleNext}
         >
          {">"}
         </button>
       )}
     </div>
+    </>
   );
 };
 

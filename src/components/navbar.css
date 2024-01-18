@@ -1,8 +1,8 @@
-a {
+.nav-element {
   position: relative;
 }
 
-a::before {
+.nav-element::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -16,7 +16,7 @@ a::before {
   transition: transform .3s ease-in-out;
 }
 
-a:hover::before {
+.nav-element:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
