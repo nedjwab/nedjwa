@@ -30,7 +30,7 @@ AOS.init({
 
 const Home = () => (
   <>
-  <section className='bg-back flex flex-col h-128 mt-0'>
+  <section className='bg-back flex flex-col h-128 mt-0' id="Home">
     <Navbar />
     <div className="mt-16 text-center container flex flex-col justify-items-center items-center font-Dancing  h-5/6">
       <div className="ml-2">
@@ -76,6 +76,7 @@ const Home = () => (
         </button>
       </div>
     </div>
+   <ParticlesBackground />
   </section>
   </>
 );
