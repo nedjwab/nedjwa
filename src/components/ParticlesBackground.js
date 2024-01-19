@@ -21,7 +21,11 @@ const ParticlesBackground = () => {
 
     // Create particles
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.1 });
+    const particlesMaterial = new THREE.PointsMaterial({
+      size: 0.1,
+      transparent: true, // Make the material transparent
+      opacity: 0.5, // Adjust the opacity as needed
+    });
 
     const particlesVertices = [];
     for (let i = 0; i < 1000; i++) {

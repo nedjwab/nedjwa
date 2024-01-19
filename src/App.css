@@ -95,16 +95,13 @@
   }
 
 
-
-  
   
 .sidebar-icon {
-  color:#F2E6D8; 
+  color:#806491; 
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .sidebar-icon:hover {
   transform: scale(1.2);
- 
   box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
 }

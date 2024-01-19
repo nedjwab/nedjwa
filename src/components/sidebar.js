@@ -4,7 +4,7 @@ import '../App.css'
 
 const Sidebar = () => (
   <div>
-    <aside className="mt-96 ml-9 hidden xl:block fixed" aria-label="Sidebar" data-aos="zoom-in">
+    <aside className="mt-96 ml-9 hidden z-20 xl:block fixed" aria-label="Sidebar" data-aos="zoom-in">
       <div className="line mt-5 ml-5 mb-9" />
       <div className="rounded text-2xl">
         <ul className="text-para space-y-2 flex flex-row xl:block">
