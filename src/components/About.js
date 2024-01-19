@@ -36,9 +36,7 @@ const About = () => {
           <div className="w-80 mr-16 mt-0">
             <div className='img mt-15'>
             <img className="logo-pic rounded-full absolute w-1/5  border-2 border-blu" data-aos="fade-right" src={pic} alt="logo" />
-            <button onClick={onButtonClick} type="submit" className='w-24 h-24 px-3 bg-blu rounded-full text-para font-Dancing'>
-              Resume
-            </button>
+         
             </div>
           </div>
           <div className="l ml-40 w-10/12">
