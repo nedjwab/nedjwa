@@ -32,14 +32,14 @@ const Home = () => (
   <>
   <section className='bg-back flex flex-col h-128 mt-0' id="Home">
     <Navbar />
-    <div className="mt-16 text-center container flex flex-col justify-items-center items-center font-Dancing  h-5/6">
+    <div className="mt-10 text-center container flex flex-col justify-items-center items-center font-Dancing  h-5/6">
       <div className="ml-2">
         <p data-aos="fade-right" className="text-para text-5xl ">
           Hello there,
           This is
           {' '}
           {'\n'}
-          <span className="text-span text-5xl mb-11"> Nedjwa.</span>
+          <span className="text-span text-5xl mb-11 "> Nedjwa.</span>
         </p>
         <div className="h-8 mt-7 mb-9">
           <Typewriter
@@ -74,6 +74,12 @@ const Home = () => (
         <button className='w-28 h-28 px-3 bg-blu rounded-full text-para'  data-aos="flip-left" >
           Let's Get In Touch
         </button>
+        <div class='scrolldown' data-aos="fade-right">
+        <div class="chevrons">
+          <div class='chevrondown'></div>
+          <div class='chevrondown'></div>
+        </div>
+      </div>
       </div>
     </div>
   </section>

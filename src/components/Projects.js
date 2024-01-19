@@ -20,7 +20,6 @@ const Projects = () => {
       </div>
       <button className='mx-auto btn' data-aos="flip-right" onClick={openLink}><span>Visit Github</span><i></i></button>
     </div>
-
   )
 }
 
