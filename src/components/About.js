@@ -28,7 +28,7 @@ const About = () => {
   return (
     <>
  
-        <div className="relative mt-10 ml-52 flex flex-row" id="About">
+        <div className="bg-back relative mt-10 ml-52 flex flex-row" id="About">
           <div className="w-80 mr-16 mt-0 ">
             <div className='img mt-15'>
             <img className="logo-pic rounded-full absolute w-1/5  border-2 border-blu" data-aos="fade-right" src={pic} alt="logo" />
