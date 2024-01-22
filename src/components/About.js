@@ -32,15 +32,18 @@ const About = () => {
           <h2 className="st-section-heading-subtitle">ABOUT</h2>
         </div>
          <div className='flex flex-row ml-36'>
-          <div className="w-80 mr-16 mt-0">
+          <div className="w-80 mr-16 mt-14">
             <div className='img mt-16'>
             <img className="logo-pic rounded-full absolute w-1/5" data-aos="fade-right" src={pic} alt="logo" />
             </div>
+            <button onClick={onButtonClick} type="submit" className='absolute top-2/4 left-96 w-24 h-24 px-3 bg-blu rounded-full text-para font-Dancing '>
+              Resume
+            </button>
           </div>
           <div className="l ml-40 w-10/12">
-            <blockquote className="text-4xl font-semibold mt-11 mb-36" data-aos="flip-right">
-              <svg aria-hidden="true" className="text-white w-10 h-10 mb-6" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
-              <h5 className="w-10/12 text-lg font-Bodoni font-extralight leading-relaxed text-para">
+            <blockquote className="text-4xl font-thin mt-11 mb-36 " data-aos="flip-right">
+              <svg aria-hidden="true" className="text-blu w-10 h-10 mb-6" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
+              <h5 className="w-10/12 text-xl font-Bodoni font-thin leading-relaxed text-para">
                 <span className="ml-8">Nedjwa</span>
                 {' '}
                 bouraiou a
@@ -74,7 +77,7 @@ const About = () => {
                 I am actively pursuing my dreams in software engineering to
                 make community-building easier.
               </h5>
-              <svg aria-hidden="true" className="text-white w-10 h-10 mt-11 absolute left-3/4 " viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
+              <svg aria-hidden="true" className="text-blu w-10 h-10 mt-11 absolute left-3/4 " viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
             </blockquote>
             <div className="tech-container flex flex-row justify-between mb-40">
               <div className="w-1/3" data-aos="zoom-in">
@@ -107,9 +110,6 @@ const About = () => {
                   <SiAdobephotoshop color="#ffffff" fill="#ffffff" className="mr-4" />
                 </div>
             <div className='absolute left-9'>
-            <button onClick={onButtonClick} type="submit" className=' w-24 h-24 px-3 bg-blu rounded-full text-para font-Dancing'>
-              Resume
-            </button>
             </div>
               </div>
             </div>
