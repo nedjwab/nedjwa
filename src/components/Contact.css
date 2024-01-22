@@ -1,0 +1,267 @@
+.background {
+    display: flex;
+    min-height: 60vh;
+    padding-top:5px;
+  }
+  
+  .container {
+    flex: 0 0 600px;
+    margin: auto;
+    padding: 10px;
+    margin-top:50px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #94C0D0;
+  }
+  
+  .screen-header-button.maximize {
+    background: #B9848C;
+  }
+  
+  .screen-header-button.minimize {
+    background: #ffffff;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #B9848C;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #B9848C;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    text-align: right;
+    margin-top: 35px;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background:#B9848C;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s; /* Adding transitions for background, box shadow, and text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a box shadow */
+}
+
+.app-form-button:hover {
+    background: #8E5A63;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Adjusting box shadow on hover */
+    color: #FFFFFF; /* Changing text color on hover */
+}
+  .credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+ 
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+  
+    .container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item {
+      padding: 20px;
+    }
+  
+    .app-form-group.buttons {
+      text-align: center;
+    }
+  
+    .app-form-button {
+      margin-top: 15px; /* Add some spacing between the buttons on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    /* Further adjustments for even smaller screens */
+  
+    .app-title {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .app-title span {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Adjustments for screens with a maximum width of 600px */
+  
+    .screen-body {
+      padding: 20px;
+    }
+  
+    .screen-body-item {
+      padding: 10px;
+    }
+  }
+  

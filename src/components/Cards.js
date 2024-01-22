@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Carousel from "react-spring-3d-carousel";
+import { ImPrevious ,ImNext } from "react-icons/im";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import pic1 from "./E-ticket.png";
 import pic2 from "./film.png";
 import pic3 from "./l.png";
@@ -20,12 +22,6 @@ const Card = ({ src, alt, descriptions, githubLink }) => {
   const descriptionSpring = useSpring({
     opacity: flipped ? 1 : 0,
   });
-
-  const nextDescription = () => {
-    setCurrentDescriptionIndex(
-      (currentDescriptionIndex + 1) % descriptions.length
-    );
-  };
 
   return (
     <div
@@ -57,8 +53,8 @@ const Card = ({ src, alt, descriptions, githubLink }) => {
           position: "absolute",
           top: 0,
           left: 0,
-          margin:"6px",
-          textAlign:"center",
+          margin: "6px",
+          textAlign: "center",
           right: 0,
           bottom: 0,
           display: "flex",
@@ -72,18 +68,18 @@ const Card = ({ src, alt, descriptions, githubLink }) => {
           {descriptions[currentDescriptionIndex]}
         </p>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <button className="">
-            GitHub
-          </button>
+          <div id="btn"><span className="noselect flex flex-row justify-center items-center">
+          <IoIosArrowRoundForward className="mr-2 text-2xl"/> Github</span><div id="circle"></div></div>
         </a>
       </animated.div>
     </div>
   );
 };
 
-const Example = () => {
+const Cards = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
+ 
 const slides = [
   {
     key: 1,
@@ -155,8 +151,11 @@ const slides = [
   },
 ];
 
+
   const handlePrevious = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
+    );
   };
 
   const handleNext = () => {
@@ -165,63 +164,57 @@ const slides = [
 
   return (
     <>
-    <div style={{ width: "65%", height: "420px", margin: "0 0 0 25%" }} data-aos="fade-down">
-      <Carousel
-        slides={slides}
-        goToSlide={currentSlide}
-        showNavigation={false} // Hide default navigation
-      />
-    </div>
-    <div>
-      {currentSlide > 0 && (
-        <button
+      <div
         style={{
-          position: "absolute",
-          left: "13%",
-          top: "280%",
-          padding: "14px",
-          fontSize: "16px",
-          transform: "translateY(-50%)",
-          color: "white",
-          border: "solid 2px #B9848C",
-          borderRadius: "50%",
-          cursor: "pointer",
-          background: "transparent",  // Set the background to transparent for the hover effect
-          transition: "background 0.3s ease",  // Add a smooth transition for the effect
+          width: "65%",
+          height: "420px",
+          margin: "30px 0 30px 25%",
         }}
-        onMouseOver={(e) => e.target.style.background = "#B9848C"}  // Change background on hover
-        onMouseOut={(e) => e.target.style.background = "transparent"}  // Reset background on mouse out
-          onClick={handlePrevious}
-        >
-           {"<"}
-        </button>
-      )}
-      {currentSlide < slides.length - 1 && (
-        <button
-        style={{
-          position: "absolute",
-          right: "13%",
-          top: "280%",
-          padding: "12px",
-          fontSize: "16px",
-          transform: "translateY(-50%)",
-          color: "white",
-          border: "solid 2px #B9848C",
-          borderRadius: "50%",
-          cursor: "pointer",
-          background: "transparent",  // Set the background to transparent for the hover effect
-          transition: "background 0.3s ease",  // Add a smooth transition for the effect
-        }}
-        onMouseOver={(e) => e.target.style.background = "#B9848C"}  // Change background on hover
-        onMouseOut={(e) => e.target.style.background = "transparent"}  // Reset background on mouse out
-          onClick={handleNext}
-        >
-         {">"}
-        </button>
-      )}
-    </div>
+        data-aos="fade-down"
+      >
+        <Carousel
+          slides={slides}
+          goToSlide={currentSlide}
+          showNavigation={false} // Hide default navigation
+        />
+      </div>
+      <div>
+        {currentSlide > 0 && (
+          <ImPrevious 
+            style={{
+              position: "absolute",
+              left: "13%",
+              top: "290%",
+              padding: "12px",
+              fontSize: "70px",
+              transform: "translateY(-50%)",
+              color: "#B9848C",
+              cursor: "pointer",
+            }}
+            onClick={handlePrevious}
+            onMouseOver={(e) => e.target.style.color = "white"} 
+          />
+        )}
+        {currentSlide < slides.length - 1 && (
+          <ImNext
+            style={{
+              position: "absolute",
+              right: "12%",
+              top: "292%",
+              padding: "12px",
+              fontSize: "70px",
+              transform: "translateY(-50%)",
+              color: "#B9848C",
+              cursor: "pointer",
+              transition: "background 0.3s ease"
+            }}
+            onClick={handleNext}
+            onMouseOver={(e) => e.target.style.color = "white"} 
+          />
+        )}
+      </div>
     </>
   );
 };
 
-export default Example;
+export default Cards;

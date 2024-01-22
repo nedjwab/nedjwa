@@ -1,5 +1,4 @@
-import Example  from './Cards';
-import CircleGrid from 'react-awesome-shapes';
+import Cards  from './Cards';
 import './Projects.css';
 
 const Projects = () => {
@@ -7,7 +6,7 @@ const Projects = () => {
     window.open("https://github.com/nedjwab",'_blank')  }
   return (
     <div className=" flex flex-col h-119 mt-0 text-para content-center pt-14" id="Projects">
-      <div className="st-section-heading st-style1 mt-3">
+      <div className="st-section-heading st-style1 ">
         <h4 className="st-section-heading-title" data-aos="fade-down">MY WORK</h4>
         <h2 className="st-section-heading-subtitle">MY WORK</h2>
       </div>
@@ -16,7 +15,7 @@ const Projects = () => {
         crafting a narrative of achievement in every endeavor ".</p>
       </blockquote>
       <div >
-        <Example  />
+        <Cards  />
       </div>
       <button className='mx-auto btn' data-aos="flip-right" onClick={openLink}><span>Visit Github</span><i></i></button>
     </div>
@@ -24,5 +23,4 @@ const Projects = () => {
 }
 
 export default Projects
-
 

@@ -4,9 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.line {
-    height: 95px;
-    border-left: 1px solid #806491;
+body {
+  overflow-x: hidden;
 }
 
   .scrolldown {
@@ -97,11 +96,16 @@
 
   
 .sidebar-icon {
-  color:#806491; 
+  color:#E3D9E0;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .sidebar-icon:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 15px #94C0D0;
+}
+
+.line {
+  height: 95px;
+  border-left: 1px solid white;
 }

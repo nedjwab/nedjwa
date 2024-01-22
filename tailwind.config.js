@@ -9,7 +9,9 @@ module.exports = {
       'para':'#F2E6D8',
       'white':"#ffffff",
       'span':'#B9848C',
-      'blu':'#806491',
+      'blu':'#94C0D0',
+      'black':"#000002"
+      
     },
     extend: {
         fontFamily: {
