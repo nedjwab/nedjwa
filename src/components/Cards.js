@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Carousel from "react-spring-3d-carousel";
+import { GrCaretNext } from "react-icons/gr";
 import pic1 from "./E-ticket.png";
 import pic2 from "./film.png";
 import pic3 from "./l.png";
@@ -178,7 +179,7 @@ const slides = [
         style={{
           position: "absolute",
           left: "13%",
-          top: "280%",
+          top: "290%",
           padding: "14px",
           fontSize: "16px",
           transform: "translateY(-50%)",
@@ -193,7 +194,7 @@ const slides = [
         onMouseOut={(e) => e.target.style.background = "transparent"}  // Reset background on mouse out
           onClick={handlePrevious}
         >
-           {"<"}
+          <GrCaretNext />
         </button>
       )}
       {currentSlide < slides.length - 1 && (
@@ -201,7 +202,7 @@ const slides = [
         style={{
           position: "absolute",
           right: "13%",
-          top: "280%",
+          top: "290%",
           padding: "12px",
           fontSize: "16px",
           transform: "translateY(-50%)",
@@ -216,7 +217,7 @@ const slides = [
         onMouseOut={(e) => e.target.style.background = "transparent"}  // Reset background on mouse out
           onClick={handleNext}
         >
-         {">"}
+         <GrCaretNext />
         </button>
       )}
     </div>

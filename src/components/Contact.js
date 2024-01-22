@@ -1,10 +1,10 @@
 
 const Contact = () => {
   return (
-    <div className="bg-white" id="Contact">
-        <h1>Contact Form</h1>
-    </div>
-  )
-}
+    <section className="bg-gray-800 text-white py-10">
+   
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

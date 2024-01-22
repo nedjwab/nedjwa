@@ -30,7 +30,6 @@ const Home = () => (
   <section className='flex flex-col h-128 mt-0' id="Home">
     <Navbar />
     <div className="mt-10 text-center container flex flex-col justify-items-center items-center font-Dancing  h-5/6">
-    <ParticlesBackground />
       <div className="ml-2">
         <p data-aos="fade-right" className="text-para text-5xl ">
           Hello there,
@@ -77,6 +76,7 @@ const Home = () => (
       </div>
       </div>
     </div>
+    <ParticlesBackground />
   </section>
   
   </>

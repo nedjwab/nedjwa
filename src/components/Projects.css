@@ -6,7 +6,8 @@
 .st-section-heading.st-style1 {
     text-align: center;
     position: relative;
-    margin-bottom: 41px;
+    margin-bottom: 45px;
+    
 }
 
 .st-section-heading.st-style1 .st-section-heading-title {
@@ -25,6 +26,7 @@
     position: absolute;
     background-color: #3f4551;
     width: 170px;
+    right: 60%;
     height: 2px;
     bottom: -16px;
     left: 50%;

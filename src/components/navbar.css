@@ -2,7 +2,6 @@
   position: relative;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
   font-size: 18px;
-  font-weight: bold;
   text-decoration: none;
 }
 
