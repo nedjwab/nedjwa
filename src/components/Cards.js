@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Carousel from "react-spring-3d-carousel";
-import { GrCaretNext } from "react-icons/gr";
+import { GrCaretNext,GrCaretPrevious } from "react-icons/gr";
 import pic1 from "./E-ticket.png";
 import pic2 from "./film.png";
 import pic3 from "./l.png";
@@ -174,29 +174,28 @@ const slides = [
       />
     </div>
     <div>
-      {currentSlide > 0 && (
-        <button
-        style={{
-          position: "absolute",
-          left: "13%",
-          top: "290%",
-          padding: "14px",
-          fontSize: "16px",
-          transform: "translateY(-50%)",
-          color: "white",
-          border: "solid 2px #B9848C",
-          borderRadius: "50%",
-          cursor: "pointer",
-          background: "transparent",  // Set the background to transparent for the hover effect
-          transition: "background 0.3s ease",  // Add a smooth transition for the effect
-        }}
-        onMouseOver={(e) => e.target.style.background = "#B9848C"}  // Change background on hover
-        onMouseOut={(e) => e.target.style.background = "transparent"}  // Reset background on mouse out
-          onClick={handlePrevious}
-        >
-          <GrCaretNext />
-        </button>
-      )}
+  {currentSlide > 0 && (
+    <button
+      style={{
+        position: "absolute",
+        left: "13%",
+        top: "290%",
+        padding: "14px",
+        fontSize: "16px",
+        transform: "translateY(-50%)",
+        border: "solid 2px #B9848C",
+        borderRadius: "50%",
+        cursor: "pointer",
+        background: "transparent",
+        transition: "background 0.3s ease",
+      }}
+      onMouseOver={(e) => (e.target.style.background = "#B9848C")}
+      onMouseOut={(e) => (e.target.style.background = "transparent")}
+      onClick={handlePrevious}
+    >
+      <GrCaretPrevious /> {/* Use the correct icon component */}
+    </button>
+  )}
       {currentSlide < slides.length - 1 && (
         <button
         style={{
@@ -215,9 +214,9 @@ const slides = [
         }}
         onMouseOver={(e) => e.target.style.background = "#B9848C"}  // Change background on hover
         onMouseOut={(e) => e.target.style.background = "transparent"}  // Reset background on mouse out
-          onClick={handleNext}
+      
         >
-         <GrCaretNext />
+          <GrCaretNext className="absolute top-96 "  onClick={handleNext} />
         </button>
       )}
     </div>

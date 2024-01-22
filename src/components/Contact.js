@@ -77,7 +77,7 @@ const Contact = () => {
         </div>
       </div>
       </div>
-      <div className="credits font-Bodoni">
+      <div className="credits font-Bodoni bg-blu bg-opacity-5 font-Bodoni">
             @2024-Nedjwa | All right reserved ✨
       </div>
     </section>
