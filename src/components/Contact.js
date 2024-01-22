@@ -1,7 +1,20 @@
 import React from 'react';
 import "./Contact.css";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_xu48twt','template_bsoxbk3', e.target,'DvK5mrzkKutuIxbbY')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+
+    e.target.reset();
+  };
   return (
     <section className="bg-black mt-10 relative" id="Contact">
       <div className="st-section-heading st-style1">
@@ -36,29 +49,29 @@ const Contact = () => {
                 </div>
                 <div className="app-contact">CONTACT INFO : +6667689545</div>
               </div>
+              <form onSubmit={sendEmail}>
               <div className="screen-body-item">
                 <div className="app-form">
                   <div className="app-form-group">
-                    <input className="app-form-control" placeholder="NAME" value="Nedjwa Bouraiou" />
+                    <input className="app-form-control" name="name" type="text" placeholder="NAME"/>
                   </div>
                   <div className="app-form-group">
-                    <input className="app-form-control" placeholder="EMAIL" />
-                  </div>
-                  <div className="app-form-group">
-                    <input className="app-form-control" placeholder="CONTACT NO" />
+                    <input className="app-form-control" name="email" type="email" placeholder="EMAIL" />
                   </div>
                   <div className="app-form-group message">
                     <input
                       className="app-form-control"
                       placeholder="MESSAGE"
+                      id="message"
+                      name="message"
                     />
                   </div>
                   <div className="app-form-group buttons">
-                    <button className="app-form-button mr-16">CANCEL</button>
                     <button className="app-form-button">SEND</button>
                   </div>
                 </div>
               </div>
+              </form>
             </div>
           </div>
         </div>
@@ -66,7 +79,7 @@ const Contact = () => {
       </div>
       <div className="credits font-Bodoni">
             @2024-Nedjwa | All right reserved ✨
-          </div>
+      </div>
     </section>
   );
 };
