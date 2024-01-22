@@ -1,4 +1,4 @@
-import Example  from './Cards';
+import Cards  from './Cards';
 import './Projects.css';
 
 const Projects = () => {
@@ -15,7 +15,7 @@ const Projects = () => {
         crafting a narrative of achievement in every endeavor ".</p>
       </blockquote>
       <div >
-        <Example  />
+        <Cards  />
       </div>
       <button className='mx-auto btn' data-aos="flip-right" onClick={openLink}><span>Visit Github</span><i></i></button>
     </div>
@@ -23,5 +23,4 @@ const Projects = () => {
 }
 
 export default Projects
-
 
