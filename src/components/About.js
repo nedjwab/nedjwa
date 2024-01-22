@@ -6,6 +6,7 @@ import {
 } from 'react-icons/si';
 import { FiFigma } from 'react-icons/fi';
 import pic from './portfolio.jpg';
+import { FaDownload } from "react-icons/fa6";
 import "./About.css"
 
 const About = () => {
@@ -36,7 +37,23 @@ const About = () => {
             <div className='img mt-16'>
             <img className="logo-pic rounded-full absolute w-1/5" data-aos="fade-right" src={pic} alt="logo" />
             </div>
-            <button onClick={onButtonClick} type="submit" className='absolute top-2/4 left-96 w-24 h-24 px-3 bg-blu rounded-full text-para font-Dancing' data-aos="fade-down-right">
+            <button onClick={onButtonClick} type="submit" className='flex flex-row justify-center items-center absolute top-2/4 left-96 w-24 h-24 px-3 bg-blu rounded-full text-para font-Dancing font-bold text-base' 
+            data-aos="fade-down-right"
+            style={{ boxShadow: '2px 0px 4px #94C0D0' , transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out'}}
+            onMouseEnter={(e) => {
+              e.target.style.boxShadow = '8px 0px 12px rgba(0, 0, 0, 0.2)';
+              e.target.style.transform = 'scale(1.1)';
+              e.target.style.backgroundColor = '#B9848C'; // Change to your desired hover background color
+              e.target.style.color = '#ffffff'; // Change to your desired hover text color
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.boxShadow = '4px 0px 6px rgba(0, 0, 0, 0.1)';
+              e.target.style.transform = 'scale(1)';
+              e.target.style.backgroundColor = '#94C0D0'; // Revert to your original background color
+              e.target.style.color = '#ffffff'; // Revert to your original text color
+            }}
+            >
+              <FaDownload className='mr-2' />
               Resume
             </button>
           </div>
@@ -82,7 +99,7 @@ const About = () => {
             <div className="tech-container flex flex-row justify-between mb-40">
               <div className="w-1/3" data-aos="zoom-in">
                 <div className="flex flex-row">
-                  <h2 className="text-xl text-para" data-aos="zoom-in">Tech I Enjoy </h2>
+                  <h2 className="text-xl text-para font-Dancing" data-aos="zoom-in">Tech I Enjoy </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">💻</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu"/>
@@ -99,7 +116,7 @@ const About = () => {
               </div>
               <div className="w-2/4 ml-8" data-aos="zoom-in-up">
                 <div className="flex flex-row">
-                  <h2 className="text-xl text-para">Tools I Use </h2>
+                  <h2 className="text-xl text-para font-Dancing">Tools I Use </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">🪓</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu" />

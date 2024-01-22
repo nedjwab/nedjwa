@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Contact.css";
+import { VscSend } from "react-icons/vsc";
+import { PiArrowBendDownRightLight } from "react-icons/pi";
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -16,15 +18,15 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section className="mt-10 relative" id="Contact">
+    <section className="mt-10 relative " id="Contact">
       <div className="st-section-heading st-style1">
         <h4 className="st-section-heading-title" data-aos="fade-down">CONTACT</h4>
         <h2 className="st-section-heading-subtitle">CONTACT</h2>
       </div>
-      <div className="flex flex-col">
-      <blockquote className="text-lg italic font-Bodoni mt-14 tracking-wide  w-2/4 mx-auto my-auto text-para" data-aos="fade-right">
-      <p className='text-center'>" In the forge of experience, I sculpted a path paved with expertise and fueled by passion,
-        crafting a narrative of achievement in every endeavor ".</p>
+      <div className="flex flex-row gap-28 justify-center ">
+      <blockquote className="text-2xl leading-relaxed italic font-Bodoni mt-14 tracking-wide w-1/4 text-para " data-aos="fade-right">
+      <p>"In the symphony of ideas, let's compose together! Whether the canvas of collaboration beckons, a project awaits its muse.feel the freedom to reach out.".</p>
+      <PiArrowBendDownRightLight className='text-span text-8xl mx-72 my-11'/>
       </blockquote>
       <div className="background" data-aos="fade-left">
         <div className="container">
@@ -67,7 +69,10 @@ const Contact = () => {
                     />
                   </div>
                   <div className="app-form-group buttons">
-                    <button className="app-form-button font-Bodoni">Send</button>
+                    <button className="app-form-button font-Bodoni flex flex-row  items-center">
+                    <VscSend className='mr-2'/>
+                    Send
+                    </button>
                   </div>
                 </div>
               </div>
