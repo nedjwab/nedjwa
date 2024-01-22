@@ -1,11 +1,32 @@
-.nav-element {
-  position: relative;
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  font-size: 18px;
-  text-decoration: none;
+/* Add this to your existing CSS file */
+
+/* Regular Navigation Container */
+.nav-container {
+  display: flex;
 }
 
-.nav-element::before {
+/* Hamburger Styles */
+.hamburger {
+  width: 30px;
+  height: 2px;
+  background-color: #B9848C;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Mobile Menu Open Styles */
+.mobile-menu-open {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Hover Effect Styles */
+.hover-effect {
+  position: relative;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hover-effect::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -20,12 +41,29 @@
   box-shadow: 0 0 10px rgba(185, 132, 140, 0.8);
 }
 
-.nav-element:hover {
+.hover-effect:hover {
   color: #B9848C;
   transform: scale(1.1);
 }
 
-.nav-element:hover::before {
+.hover-effect:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+/* Media Query for Mobile Styles */
+@media (max-width: 768px) {
+  .nav-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav-element {
+    margin: 10px 0;
+  }
+
+  .lg:hidden {
+    display: block;
+  }
 }
