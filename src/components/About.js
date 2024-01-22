@@ -11,14 +11,14 @@ import "./About.css"
 const About = () => {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('./cv.pdf').then((response) => {
+    fetch('cv.pdf').then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         const alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'NedjwasCV.pdf';
+        alink.download = 'MyCv.pdf';
         alink.click();
       });
     });
