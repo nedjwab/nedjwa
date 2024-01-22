@@ -23,17 +23,18 @@ const About = () => {
       });
     });
   };
+
   return (
     <>
-        <div className="bg-black mt-10 pt-14 relative" id="About">
+        <div className="bg-black mt-10 relative" id="About">
         <div className="st-section-heading st-style1">
           <h4 className="st-section-heading-title" data-aos="fade-down">ABOUT</h4>
           <h2 className="st-section-heading-subtitle">ABOUT</h2>
-         </div>
+        </div>
          <div className='flex flex-row ml-36'>
           <div className="w-80 mr-16 mt-0">
-            <div className='img mt-14'>
-            <img className="logo-pic rounded-full absolute w-1/5 " data-aos="fade-right" src={pic} alt="logo" />
+            <div className='img mt-16'>
+            <img className="logo-pic rounded-full absolute w-1/5" data-aos="fade-right" src={pic} alt="logo" />
             </div>
           </div>
           <div className="l ml-40 w-10/12">
@@ -81,7 +82,7 @@ const About = () => {
                   <h2 className="text-xl text-para" data-aos="zoom-in">Tech I Enjoy </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">💻</span>
                 </div>
-                <hr className="hr w-8 h-1 mt-2" />
+                <hr className="hr w-8 h-1 mt-2"/>
                 <div className="flex flex-row flex-wrap text-4xl mt-3">
                   <DiReact color="#B9848C" fill="#B9848C" className="mr-2" />
                   <DiJavascript1 color="#ffffff" fill="#ffffff" className="mr-2"  />
