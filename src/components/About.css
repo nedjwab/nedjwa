@@ -9,3 +9,7 @@
     transform: scale(1.2);
 }
 
+.icons:hover {
+    transform: scale(1.2);
+   cursor: pointer;
+}
