@@ -67,7 +67,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="app-form-group buttons">
-                    <button className="app-form-button">SEND</button>
+                    <button className="app-form-button font-Bodoni">Send</button>
                   </div>
                 </div>
               </div>

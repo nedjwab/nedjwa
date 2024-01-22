@@ -116,6 +116,7 @@
   
   .app-form-group {
     margin-bottom: 15px;
+    margin-top: 15px;
   }
   
   .app-form-group.message {
@@ -124,8 +125,7 @@
   
   .app-form-group.buttons {
     text-align: right;
-    margin-top: 12px;
-    background-color: #4d4d4f;
+    margin-top: 35px;
   }
   
   .app-form-control {
@@ -150,18 +150,22 @@
   }
   
   .app-form-button {
-    background: none;
-    border: none;
-    color: #B9848C;
+    background:#B9848C;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
     font-size: 14px;
     cursor: pointer;
     outline: none;
-  }
-  
-  .app-form-button:hover {
-    color: #94C0D0;
-  }
-  
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s; /* Adding transitions for background, box shadow, and text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a box shadow */
+}
+
+.app-form-button:hover {
+    background: #8E5A63;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Adjusting box shadow on hover */
+    color: #FFFFFF; /* Changing text color on hover */
+}
   .credits {
     display: flex;
     justify-content: center;
@@ -204,6 +208,61 @@
   
     .screen-body-item {
       padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+  
+    .container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item {
+      padding: 20px;
+    }
+  
+    .app-form-group.buttons {
+      text-align: center;
+    }
+  
+    .app-form-button {
+      margin-top: 15px; /* Add some spacing between the buttons on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    /* Further adjustments for even smaller screens */
+  
+    .app-title {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .app-title span {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Adjustments for screens with a maximum width of 600px */
+  
+    .screen-body {
+      padding: 20px;
+    }
+  
+    .screen-body-item {
+      padding: 10px;
     }
   }
   
