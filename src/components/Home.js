@@ -1,6 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Navbar from './Navbar';
+import { HashLink as Link } from 'react-router-hash-link';
 import ParticlesBackground from './ParticlesBackground';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -68,12 +69,14 @@ const Home = () => (
           <br />
           I can help you build a product , feature or website.
         </p>
-        <div class='scrolldown cursor-pointer' data-aos="fade-right">
+      <Link to="#About">       
+       <div class='scrolldown cursor-pointer' data-aos="fade-right"> 
         <div class="chevrons">
           <div class='chevrondown'></div>
           <div class='chevrondown'></div>
         </div>
       </div>
+      </Link>
       </div>
     </div>
     <ParticlesBackground />

@@ -16,7 +16,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section className="bg-black mt-10 relative" id="Contact">
+    <section className="mt-10 relative" id="Contact">
       <div className="st-section-heading st-style1">
         <h4 className="st-section-heading-title" data-aos="fade-down">CONTACT</h4>
         <h2 className="st-section-heading-subtitle">CONTACT</h2>
@@ -47,7 +47,7 @@ const Contact = () => {
                   <span>CONTACT</span>
                   <span>ME</span>
                 </div>
-                <div className="app-contact">CONTACT INFO : +6667689545</div>
+                <div className="app-contact">CONTACT INFO : +666766773</div>
               </div>
               <form onSubmit={sendEmail}>
               <div className="screen-body-item">
