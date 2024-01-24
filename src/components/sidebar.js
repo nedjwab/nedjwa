@@ -23,8 +23,8 @@ const Sidebar = () => (
           <BsGithub />
         </a>
       </li>
-              </ul>
-            </div>
+      </ul>
+      </div>
     </aside>
   </div>
 );

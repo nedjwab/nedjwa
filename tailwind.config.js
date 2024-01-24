@@ -17,7 +17,9 @@ module.exports = {
         fontFamily: {
           'Roboto': ['Roboto Slab', 'serif'],
           'Dancing' :['Dancing Script', 'cursive'],
-          'Bodoni': ['Bodoni Moda', 'serif']
+          'Bodoni': ['Bodoni Moda', 'serif'],
+          'Popins': ['Poppins', 'sans-serif'],
+
       },
       height: {
         '128': '730px',

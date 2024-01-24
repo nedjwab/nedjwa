@@ -5,7 +5,7 @@ const Projects = () => {
   const openLink = () => {
     window.open("https://github.com/nedjwab",'_blank')  }
   return (
-    <div className=" flex flex-col h-119 mt-0 text-para content-center pt-14" id="Projects">
+    <div className="flex flex-col h-119 mt-0 text-para content-center pt-14" id="Projects">
       <div className="st-section-heading st-style1 ">
         <h4 className="st-section-heading-title" data-aos="fade-down">MY WORK</h4>
         <h2 className="st-section-heading-subtitle">MY WORK</h2>

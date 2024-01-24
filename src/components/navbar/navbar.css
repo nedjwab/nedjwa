@@ -1,24 +1,3 @@
-/* Add this to your existing CSS file */
-
-/* Regular Navigation Container */
-.nav-container {
-  display: flex;
-}
-
-/* Hamburger Styles */
-.hamburger {
-  width: 30px;
-  height: 2px;
-  background-color: #B9848C;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-/* Mobile Menu Open Styles */
-.mobile-menu-open {
-  flex-direction: column;
-  align-items: flex-end;
-}
 
 /* Hover Effect Styles */
 .hover-effect {
@@ -45,7 +24,7 @@
 
 .hover-effect:hover {
   color: #B9848C;
-  transform: scale(1.1);
+ transform: scale(1.2);
 }
 
 .hover-effect:hover::before {
@@ -53,19 +32,7 @@
   transform: scaleX(1);
 }
 
-/* Media Query for Mobile Styles */
-@media (max-width: 768px) {
-  .nav-container {
-    display: none;
-    flex-direction: column;
-    align-items: flex-end;
-  }
 
-  .nav-element {
-    margin: 10px 0;
-  }
-
-  .lg:hidden {
-    display: block;
-  }
+.nav-element:hover {
+  transform: scale(1.2);
 }

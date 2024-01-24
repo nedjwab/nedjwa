@@ -1,8 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import Navbar from './Navbar';
+import Navbar from './navbar/Navbar';
 import { HashLink as Link } from 'react-router-hash-link';
-import ParticlesBackground from './ParticlesBackground';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -28,30 +27,30 @@ AOS.init({
 
 const Home = () => (
   <>
-  <section className='flex flex-col h-128 mt-0' id="Home">
+  <section className='flex flex-col md:lg:h-128 mt-0' id="Home">
     <Navbar />
-    <div className="mt-10 text-center container flex flex-col justify-items-center items-center font-Dancing  h-5/6">
+    <div className="mt-0 md:lg:mt-10 text-center container flex flex-col justify-items-center items-center Popins  h-5/6">
       <div className="ml-2">
-        <p data-aos="fade-right" className="text-para text-5xl ">
+        <p data-aos="fade-right" className="text-para text-2xl md:lg:text-5xl ">
           Hello there,
           This is
           {' '}
           {'\n'}
-          <span className="text-span text-5xl mb-11 "> Nedjwa.</span>
+          <span className="text-span text-2xl md:lg:text-5xl mb-11 "> Nedjwa.</span>
         </p>
         <div className="h-8 mt-7 mb-9">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString('<span style="color: #B9848C;;font-size:30px;">UI/UX Designer </span>')
+                .typeString('<span style="color: #B9848C;;font-size:18px;">UI/UX Designer </span>')
                 .pauseFor(10)
                 .deleteAll()
-                .typeString('<span style="color:#B9848C;;font-size:30px;">Full-Stack web developper </span>')
+                .typeString('<span style="color:#B9848C;;font-size:18px;">Full-Stack web developper </span>')
                 .start();
             }}
           />
         </div>
-        <p data-aos="zoom-in" className="text-para text-3xl font-light leading-10 mt-13 xl:mt-20 mb-16">
+        <p data-aos="zoom-in" className="text-para text-xl md:lg:text-3xl font-light leading-8 md:lg:leading-10 mt-13 xl:mt-20 mb-16 font-Dancing">
           I&apos;m a
           {' '}
           <span className="text-span">computer scientist</span>
@@ -79,7 +78,7 @@ const Home = () => (
       </Link>
       </div>
     </div>
-    <ParticlesBackground />
+ 
   </section>
   
   </>
