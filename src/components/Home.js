@@ -27,10 +27,10 @@ AOS.init({
 
 const Home = () => (
   <>
-  <section className='flex flex-col md:lg:h-128 mt-0' id="Home">
+  <section className='flex flex-col md:lg:h-128 md:lg:font-Dancing' id="Home">
     <Navbar />
     <div className="mt-0 md:lg:mt-10 text-center container flex flex-col justify-items-center items-center Popins  h-5/6">
-      <div className="ml-2">
+      <div className="md:lg:ml-2">
         <p data-aos="fade-right" className="text-para text-2xl md:lg:text-5xl ">
           Hello there,
           This is
@@ -38,14 +38,14 @@ const Home = () => (
           {'\n'}
           <span className="text-span text-2xl md:lg:text-5xl mb-11 "> Nedjwa.</span>
         </p>
-        <div className="h-8 mt-7 mb-9">
-          <Typewriter
+        <div className="h-8 mt-7 mb-9 font-Dancing">
+          <Typewriter className="text-5xl"
             onInit={(typewriter) => {
               typewriter
-                .typeString('<span style="color: #B9848C;;font-size:18px;">UI/UX Designer </span>')
+                .typeString('<span style="color: #B9848C">UI/UX Designer </span>')
                 .pauseFor(10)
                 .deleteAll()
-                .typeString('<span style="color:#B9848C;;font-size:18px;">Full-Stack web developper </span>')
+                .typeString('<span style="color:#B9848C">Full-Stack web developper </span>')
                 .start();
             }}
           />

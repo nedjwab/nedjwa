@@ -6,7 +6,7 @@ import './navbar.css';
 const Navbar = () => {
   return (
     <section>
-      <div className="h-16 mt-2 md:lg:h-3/4 text-blu flex flex-row items-center justify-between cursor-pointer" data-aos="fade-down">
+      <div className="h-16  mt-6 md:lg:mt-0 md:lg:h-3/4 text-blu flex flex-row items-center justify-between cursor-pointer" data-aos="fade-down">
         <div className='img-container  w-1/4 lg:md:w-36'>
           <Link to="#Home"><img src={logo} alt="logo" className=''></img></Link>
         </div>
