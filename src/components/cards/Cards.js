@@ -184,7 +184,7 @@ const slides = [
             style={{
               position: "absolute",
               left: "13%",
-              top: "290%",
+              top: "59%",
               padding: "12px",
               fontSize: "70px",
               transform: "translateY(-50%)",
@@ -200,7 +200,7 @@ const slides = [
             style={{
               position: "absolute",
               right: "12%",
-              top: "292%",
+              top: "59%",
               padding: "12px",
               fontSize: "70px",
               transform: "translateY(-50%)",
