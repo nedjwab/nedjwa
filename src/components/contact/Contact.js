@@ -23,8 +23,8 @@ const Contact = () => {
         <h4 className="st-section-heading-title" data-aos="fade-down">CONTACT</h4>
         <h2 className="st-section-heading-subtitle">CONTACT</h2>
       </div>
-      <div className="flex flex-row gap-28 justify-center ">
-      <blockquote className="text-xl leading-relaxed italic font-Bodoni mt-14 tracking-wide w-1/4 text-para " data-aos="fade-right">
+      <div className="flex flex-row gap-28 justify-center mt-20 ">
+      <blockquote className="text-xl leading-relaxed italic font-Bodoni mt-40 tracking-wide w-1/4 text-para " data-aos="fade-right">
       <p>"In the symphony of ideas, let's compose together! Whether the canvas of collaboration beckons, a project awaits its muse.feel the freedom to reach out.".</p>
       <PiArrowBendDownRightLight className='text-span text-8xl mx-72 my-11'/>
       </blockquote>
@@ -54,8 +54,8 @@ const Contact = () => {
               <form onSubmit={sendEmail}>
               <div className="screen-body-item">
                 <div className="app-form">
-                  <div className="app-form-group">
-                    <input className="app-form-control" name="name" type="text" placeholder="NAME"/>
+                  <div className="app-form-group text-para">
+                    <input className="app-form-control" name="name" type="text" placeholder="Name"/>
                   </div>
                   <div className="app-form-group">
                     <input className="app-form-control" name="email" type="email" placeholder="EMAIL" />
