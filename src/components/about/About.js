@@ -5,7 +5,7 @@ import {
   SiTailwindcss, SiReduxsaga, SiBootstrap, SiPostman, SiAdobexd, SiAdobephotoshop,
 } from 'react-icons/si';
 import { FiFigma } from 'react-icons/fi';
-import pic from '../assets/portfolio.jpg';
+import pic from '../assets/images/portfolio.jpg';
 import { FaDownload } from "react-icons/fa6";
 import "./About.css"
 

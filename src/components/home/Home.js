@@ -4,6 +4,7 @@ import Navbar from '../navbar/Navbar';
 import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './Home.css'
 
 
 AOS.init({
@@ -38,19 +39,19 @@ const Home = () => (
           {'\n'}
           <span className="text-span text-2xl md:lg:text-5xl mb-11 "> Nedjwa.</span>
         </p>
-        <div className="h-8 mt-7 mb-9 font-Dancing">
+        <div className="h-8 mt-7 mb-4 font-Dancing">
           <Typewriter className="text-5xl"
             onInit={(typewriter) => {
               typewriter
-                .typeString('<span style="color: #B9848C">UI/UX Designer </span>')
+                .typeString('<span class="typewriter">UI/UX Designer </span>')
                 .pauseFor(10)
                 .deleteAll()
-                .typeString('<span style="color:#B9848C">Full-Stack web developper </span>')
+                .typeString('<span class="typewriter">Full-Stack web developper </span>')
                 .start();
             }}
           />
         </div>
-        <p data-aos="zoom-in" className="text-para text-xl md:lg:text-3xl font-light leading-8 md:lg:leading-10 mt-13 xl:mt-20 mb-16 font-Dancing">
+        <p data-aos="zoom-in" className="text-para text-xl md:lg:text-3xl font-light leading-8 md:lg:leading-10 mt-13 xl:mt-16 mb-16 font-Dancing">
           I&apos;m a
           {' '}
           <span className="text-span">computer scientist</span>

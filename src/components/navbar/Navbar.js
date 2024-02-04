@@ -1,6 +1,6 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import Hamburger from '../hamburger/Hamburger';
-import logo from '../assets/logo.png';
+import logo from '../assets/images/logo.png';
 import './navbar.css';
 
 const Navbar = () => {

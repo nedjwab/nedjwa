@@ -3,12 +3,12 @@ import { useSpring, animated } from "react-spring";
 import Carousel from "react-spring-3d-carousel";
 import { ImPrevious ,ImNext } from "react-icons/im";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import pic1 from "../assets/E-ticket.png";
-import pic2 from "../assets//film.png";
-import pic3 from "../assets//l.png";
-import pic4 from "../assets//math.PNG";
-import pic5 from "../assets//portfolio.PNG";
-import pic6 from "../assets//budget.PNG";
+import pic1 from "../assets/images/E-ticket.png";
+import pic2 from "../assets/images/film.png";
+import pic3 from "../assets/images/l.png";
+import pic4 from "../assets/images/math.PNG";
+import pic5 from "../assets/images/portfolio.PNG";
+import pic6 from "../assets/images/budget.PNG";
 
 const Card = ({ src, alt, descriptions, githubLink }) => {
   const [flipped, setFlipped] = useState(false);
