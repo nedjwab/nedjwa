@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import {  Route, Routes } from 'react-router-dom';
 import ParticlesBackground from './components/config/ParticlesBackground';
 import Sidebar from './components/sidebar/sidebar';
 import Home from './components/home/Home';

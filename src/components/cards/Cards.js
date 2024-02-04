@@ -12,7 +12,7 @@ import pic6 from "../assets/images/budget.PNG";
 
 const Card = ({ src, alt, descriptions, githubLink }) => {
   const [flipped, setFlipped] = useState(false);
-  const [currentDescriptionIndex, setCurrentDescriptionIndex] = useState(0);
+  const [currentDescriptionIndex] = useState(0);
 
   const { opacity, transform } = useSpring({
     opacity: flipped ? 0 : 1,
