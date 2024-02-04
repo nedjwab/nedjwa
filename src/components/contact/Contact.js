@@ -24,7 +24,7 @@ const Contact = () => {
         <h2 className="st-section-heading-subtitle">CONTACT</h2>
       </div>
       <div className="flex flex-row gap-28 justify-center ">
-      <blockquote className="text-2xl leading-relaxed italic font-Bodoni mt-14 tracking-wide w-1/4 text-para " data-aos="fade-right">
+      <blockquote className="text-xl leading-relaxed italic font-Bodoni mt-14 tracking-wide w-1/4 text-para " data-aos="fade-right">
       <p>"In the symphony of ideas, let's compose together! Whether the canvas of collaboration beckons, a project awaits its muse.feel the freedom to reach out.".</p>
       <PiArrowBendDownRightLight className='text-span text-8xl mx-72 my-11'/>
       </blockquote>
