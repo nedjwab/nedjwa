@@ -32,7 +32,7 @@ const About = () => {
           <h4 className="st-section-heading-title" data-aos="fade-down">ABOUT</h4>
           <h2 className="st-section-heading-subtitle">ABOUT</h2>
         </div>
-        <div className='flex flex-col-reverse md:lg:xl:flex-row relative md:flex-row ml-8 md:lg:xl:ml-36'>
+        <div className='flex flex-col-reverse md:lg:xl:flex-row md:lg:xl:mt-14 relative md:flex-row ml-8 md:lg:xl:ml-36'>
           <div className=" w-full md:w-80 mt-2 mr-0 md:mr-16 md:lg:xl:mt-14">
             <div className='img hidden md:flex xl:flex mt-4'>
             <img className="logo-pic rounded-full absolute w-1/4" data-aos="fade-right" src={pic} alt="logo" />
@@ -97,7 +97,7 @@ const About = () => {
               </h5>
               <svg aria-hidden="true" className="text-white w-10 h-10 mt-11 absolute left-3/4" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
             </blockquote>
-            <div className="tech-container mb-0 flex flex-row gap-64 md:xl:lg:mb-40">
+            <div className="tech-container mb-0 flex flex-row gap-64 md:xl:lg:mb-20">
               <div className="w-1/3" data-aos="zoom-in">
                 <div className="flex flex-row">
                   <h2 className="text-lg md:xl:lg:text-xl text-para font-bold " data-aos="zoom-in">Tech I Enjoy </h2>
