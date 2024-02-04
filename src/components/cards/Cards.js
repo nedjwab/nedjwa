@@ -68,8 +68,8 @@ const Card = ({ src, alt, descriptions, githubLink }) => {
           {descriptions[currentDescriptionIndex]}
         </p>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <div id="btn"><span className="noselect flex flex-row justify-center items-center">
-          <IoIosArrowRoundForward className="mr-2 text-2xl"/> Github</span><div id="circle"></div></div>
+          <div id="btn"><span className="noselect flex flex-row justify-center items-center font-Roboto">
+          <IoIosArrowRoundForward className="mr-0 text-2xl"/>Github</span><div id="circle"></div></div>
         </a>
       </animated.div>
     </div>

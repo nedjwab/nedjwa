@@ -1,5 +1,5 @@
 import {
-  DiReact, DiJavascript1, DiRubyRough, DiGit, DiWordpress,
+  DiReact, DiJavascript1, DiGit,
 } from 'react-icons/di';
 import {
   SiTailwindcss, SiReduxsaga, SiBootstrap, SiPostman, SiAdobexd, SiAdobephotoshop,
@@ -34,10 +34,10 @@ const About = () => {
         </div>
         <div className='flex flex-col-reverse md:lg:xl:flex-row relative md:flex-row ml-8 md:lg:xl:ml-36'>
           <div className=" w-full md:w-80 mt-2 mr-0 md:mr-16 md:lg:xl:mt-14">
-            <div className='img hidden md:flex xl:flex mt-16'>
-            <img className="logo-pic rounded-full absolute w-1/5" data-aos="fade-right" src={pic} alt="logo" />
+            <div className='img hidden md:flex xl:flex mt-4'>
+            <img className="logo-pic rounded-full absolute w-1/4" data-aos="fade-right" src={pic} alt="logo" />
             </div>
-            <button onClick={onButtonClick} type="submit" className='mt-0 mx-auto relative top-1 md:top-50 md:left-11 flex flex-row justify-center items-center absolute  rounded-2xl md:lg:xl:rounded-full w-24 h-16 md:lg:xl:h-24 px-3 bg-blu text-para font-Dancing font-bold text-base' 
+            <button onClick={onButtonClick} type="submit" className='mt-0 mx-auto relative top-1 md:top-48 md:left-52 flex flex-row justify-center items-center absolute  rounded-2xl md:lg:xl:rounded-full w-24 h-16 md:lg:xl:h-24 px-3 bg-blu text-para font-Dancing font-bold text-base' 
             data-aos="fade-down-right"
             style={{ boxShadow: '2px 0px 4px #94C0D0' , transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out'}}
             onMouseEnter={(e) => {
@@ -60,7 +60,7 @@ const About = () => {
           <div className="ml-0 md:xl:lg:ml-32 w-full md:xl:lg:w-10/12">
             <blockquote className="md:lg:xl:text-4xl text-sm text-sm font-thin mt-20 mb-36 " data-aos="flip-right">
               <svg aria-hidden="true" className="text-white w-10 h-10 mb-6" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
-              <h5 className="w-10/12 md:lg:xl:text-xl text-base font-Popins font-extralight leading-normal text-para text-center">
+              <h5 className="w-10/12 md:lg:xl:text-xl  font-Popins font-extralight text-para text-center">
                 <span className="ml-8">Nedjwa</span>
                 {' '}
                 bouraiou a
@@ -74,7 +74,9 @@ const About = () => {
                 from
                 {' '}
                 <span className="text-span">Algeria.</span>
-                I am 26 years old.I hold a
+                I am 26 
+                {' '}
+                years old.I hold a
                 {' '}
                 <span className="text-span ">master&apos;s degree </span>
                 in network and distributed systems
@@ -88,18 +90,17 @@ const About = () => {
                 <span className="text-span">implement</span>
                 {' '}
                 websites.
-                I have recently completed the microverse program,
-                a remote software development school where I work with diverse
-                cultures through peer programming,
+                With over a year of experience in developing websites, I specialize in crafting user-friendly web experiences.
+                I'm passionate about leveraging technology to create impactful digital solutions.
                 I am actively pursuing my dreams in software engineering to
                 make community-building easier.
               </h5>
               <svg aria-hidden="true" className="text-white w-10 h-10 mt-11 absolute left-3/4" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
             </blockquote>
-            <div className="tech-container mb-0 flex flex-row justify-between md:xl:lg:mb-40">
+            <div className="tech-container mb-0 flex flex-row gap-64 md:xl:lg:mb-40">
               <div className="w-1/3" data-aos="zoom-in">
                 <div className="flex flex-row">
-                  <h2 className="text-base md:xl:lg:text-xl text-para font-Dancing" data-aos="zoom-in">Tech I Enjoy </h2>
+                  <h2 className="text-lg md:xl:lg:text-xl text-para font-bold " data-aos="zoom-in">Tech I Enjoy </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">💻</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu"/>
@@ -107,16 +108,14 @@ const About = () => {
                   <DiReact color="#94C0D0" fill="#94C0D0" className="mr-2 icons" />
                   <DiJavascript1 color="#ffffff" fill="#ffffff" className="mr-2 icons"  />
                   <SiTailwindcss color="#94C0D0" fill="#94C0D0" className="mr-2 icons" />
-                  <SiBootstrap color="#ffffff" fill="#ffffff" className="mr-2 icons" /><br />
+                  <SiBootstrap color="#ffffff" fill="#ffffff" className="mr-2 icons" /> 
                   <SiReduxsaga color="#94C0D0" fill="#94C0D0" className="mr-2 icons" />
-                  <DiWordpress color="#ffffff" fill="#ffffff" className="mr-2 icons" />
-                  <DiRubyRough color="#94C0D0" fill="#94C0D0" className="mr-2 icons" />
                   <DiGit className="mr-2" />
                 </div>
               </div>
               <div className="w-2/4 ml-8" data-aos="zoom-in-up">
                 <div className="flex flex-row">
-                  <h2 className="text-base md:xl:lg:text-xl text-para font-Dancing">Tools I Use </h2>
+                  <h2 className="text-base md:xl:lg:text-xl text-para font-bold ">Tools I Use </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">🪓</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu" />
