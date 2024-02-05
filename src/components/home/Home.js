@@ -51,7 +51,7 @@ const Home = () => (
             }}
           />
         </div>
-        <p data-aos="zoom-in" className="text-para text-xl md:lg:text-3xl font-light leading-8 md:lg:leading-10 mt-13 xl:mt-16 mb-16 font-Dancing">
+        <p data-aos="zoom-in" className="mx-2 text-para text-xl md:lg:text-3xl font-light leading-8 md:lg:leading-10 mt-13 xl:mt-16 mb-16 font-Dancing">
           I&apos;m a
           {' '}
           <span className="text-span">computer scientist</span>
