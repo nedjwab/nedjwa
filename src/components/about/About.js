@@ -100,7 +100,7 @@ const About = () => {
             <div className="tech-container mb-0 flex flex-row gap-64 md:xl:lg:mb-20">
               <div className="w-1/3" data-aos="zoom-in">
                 <div className="flex flex-row">
-                  <h2 className="text-lg md:xl:lg:text-xl text-para font-bold " data-aos="zoom-in">Tech I Enjoy </h2>
+                  <h2 className="text-lg md:xl:lg:text-xl text-span neon-text" data-aos="zoom-in">Tech I Enjoy </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">💻</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu"/>
@@ -115,7 +115,7 @@ const About = () => {
               </div>
               <div className="w-2/4 ml-8" data-aos="zoom-in-up">
                 <div className="flex flex-row">
-                  <h2 className="text-base md:xl:lg:text-xl text-para font-bold ">Tools I Use </h2>
+                  <h2 className="text-base md:xl:lg:text-xl text-blu neon-text">Tools I Use </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">🪓</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu" />

@@ -23,10 +23,10 @@ const Contact = () => {
         <h4 className="st-section-heading-title" data-aos="fade-down">CONTACT</h4>
         <h2 className="st-section-heading-subtitle">CONTACT</h2>
       </div>
-      <div className="flex flex-row gap-28 justify-center mt-20 ">
-      <blockquote className="text-xl leading-relaxed italic font-Bodoni mt-40 tracking-wide w-1/4 text-para " data-aos="fade-right">
+      <div className="sm:flex sm:flex-col md:lg:xl:flex md:lg:xl:flex-row gap-28 justify-center mt-20 text-center ">
+      <blockquote className="text-center text-sm md:xl:lg:text-xl leading-relaxed italic font-Bodoni mt-8 md:lg:xl:mt-40 tracking-wide md:xl:lg:w-1/4 text-para" data-aos="fade-right">
       <p>"In the symphony of ideas, let's compose together! Whether the canvas of collaboration beckons, a project awaits its muse.feel the freedom to reach out.".</p>
-      <PiArrowBendDownRightLight className='text-span text-8xl mx-72 my-11'/>
+      <PiArrowBendDownRightLight className='hidden md:lg:xl:block text-span text-8xl mx-72 my-11'/>
       </blockquote>
       <div className="background" data-aos="fade-left">
         <div className="container">
@@ -49,7 +49,6 @@ const Contact = () => {
                   <span>CONTACT</span>
                   <span>ME</span>
                 </div>
-                <div className="app-contact">CONTACT INFO : +666766773</div>
               </div>
               <form onSubmit={sendEmail}>
               <div className="screen-body-item">
@@ -82,8 +81,10 @@ const Contact = () => {
         </div>
       </div>
       </div>
-      <div className="credits font-Bodoni bg-blu bg-opacity-5 font-Bodoni">
-            @2024-Nedjwa | All right reserved ✨
+      <div className="credits bg-blu bg-opacity-5 font-bold">
+            @2024 - <span className='text-blu font-Bodoni mr-1'>Nedjwa</span>
+             {''}
+              | All Right Reserved ✨
       </div>
     </section>
   );
