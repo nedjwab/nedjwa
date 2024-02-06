@@ -1,6 +1,5 @@
 import React, { useState } from 'react'; // import state
 import { BsFillBriefcaseFill } from 'react-icons/bs';
-import { FaUserAlt } from 'react-icons/fa';
 import {
   AiFillHome,
 } from 'react-icons/ai';
