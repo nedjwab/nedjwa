@@ -1,5 +1,5 @@
 .bgh {
-    background: linear-gradient(to left, #0c002b, #B9848C);
+    background: linear-gradient(to left, #94C0D0, #B9848C);
   }
   
   .color {
@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 50;
+    
   }
   .div {
     position: relative;
