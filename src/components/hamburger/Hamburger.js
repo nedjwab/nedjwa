@@ -1,9 +1,9 @@
 import React, { useState } from 'react'; // import state
 import { BsFillBriefcaseFill } from 'react-icons/bs';
-import { FaUserAlt } from 'react-icons/fa';
 import {
   AiFillHome,
 } from 'react-icons/ai';
+import { HashLink as Link } from 'react-router-hash-link';
 import './hamburger.css';
 
  const Hamburger = () => {
@@ -48,12 +48,13 @@ import './hamburger.css';
                 <a href="/">Home</a>
               </li>
               <li className="my-8 uppercase color flex flex-row ">
-                <FaUserAlt color="#B9848C" fill="#ffc2e2" className="mr-4 mt-1" />
-                <a href="/about">About</a>
+              <Link to="#About">
+                <span>About</span>
+              </Link>
               </li>
               <li className="my-8 uppercase color flex flex-row">
                 <BsFillBriefcaseFill color="#B9848C" fill="#ffc2e2" className="ml-9 mr-4 mt-1" />
-                <a href="/portfolio" className="color">Portfolio</a>
+                <a href="/" className="color">Projects</a>
               </li>
             </ul>
           </div>

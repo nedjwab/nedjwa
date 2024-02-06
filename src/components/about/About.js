@@ -33,8 +33,8 @@ const About = () => {
           <h2 className="st-section-heading-subtitle">ABOUT</h2>
         </div>
         <div className='flex flex-col-reverse md:lg:xl:flex-row md:lg:xl:mt-14 relative md:flex-row ml-8 md:lg:xl:ml-36'>
-          <div className=" w-full md:w-80 mt-2 mr-0 md:mr-16 md:lg:xl:mt-14">
-            <div className='img hidden md:flex xl:flex mt-4'>
+          <div className="w-full md:w-80 mt-2 mr-0 md:mr-16 md:lg:xl:mt-14">
+            <div className='img hidden md:xl:lg:flex mt-4'>
             <img className="logo-pic rounded-full absolute w-1/4" data-aos="fade-right" src={pic} alt="logo" />
             </div>
             <button onClick={onButtonClick} type="submit" className='mt-0 mx-auto relative top-1 md:top-48 md:left-52 flex flex-row justify-center items-center absolute  rounded-2xl md:lg:xl:rounded-full w-24 h-16 md:lg:xl:h-24 px-3 bg-blu text-para font-Dancing font-bold text-base' 
@@ -97,10 +97,10 @@ const About = () => {
               </h5>
               <svg aria-hidden="true" className="text-white w-10 h-10 mt-11 absolute left-3/4" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
             </blockquote>
-            <div className="tech-container mb-0 flex flex-row gap-64 md:xl:lg:mb-20">
-              <div className="w-1/3" data-aos="zoom-in">
+            <div className="tech-container mb-0 flex flex-row md:xl:lg:gap-64 md:xl:lg:mb-20">
+              <div className="w-1/2" data-aos="zoom-in">
                 <div className="flex flex-row">
-                  <h2 className="text-lg md:xl:lg:text-xl text-para font-bold " data-aos="zoom-in">Tech I Enjoy </h2>
+                  <h2 className="text-lg md:xl:lg:text-xl text-span neon-text" data-aos="zoom-in">Tech I Enjoy </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">💻</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu"/>
@@ -113,9 +113,9 @@ const About = () => {
                   <DiGit className="mr-2" />
                 </div>
               </div>
-              <div className="w-2/4 ml-8" data-aos="zoom-in-up">
+              <div className="w-1/2 ml-8" data-aos="zoom-in-up">
                 <div className="flex flex-row">
-                  <h2 className="text-base md:xl:lg:text-xl text-para font-bold ">Tools I Use </h2>
+                  <h2 className="text-base md:xl:lg:text-xl text-blu neon-text">Tools I Use </h2>
                   <span role="img" aria-label="dog" className="text-xl ml-2">🪓</span>
                 </div>
                 <hr className="hr w-8 h-1 mt-2 text-blu" />
