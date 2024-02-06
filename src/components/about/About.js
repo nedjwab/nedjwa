@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   DiReact, DiJavascript1, DiGit,
 } from 'react-icons/di';
@@ -11,10 +12,10 @@ import "./About.css"
 
 const About = () => {
   const onButtonClick = () => {
-    // using Java Script method to get PDF file
+    // using JavaScript method to get PDF file
     fetch('cv.pdf').then((response) => {
       response.blob().then((blob) => {
-        // Creating new object of PDF file
+        // Creating a new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         const alink = document.createElement('a');
@@ -27,7 +28,7 @@ const About = () => {
 
   return (
     <>
-        <div className="md:lg:mt-14 mt-4 relative" id="About">
+      <div className="md:lg:mt-14 mt-4 relative" id="About">
         <div className="st-section-heading st-style1">
           <h4 className="st-section-heading-title" data-aos="fade-down">ABOUT</h4>
           <h2 className="st-section-heading-subtitle">ABOUT</h2>
@@ -65,7 +66,7 @@ const About = () => {
                 {' '}
                 bouraiou a
                 {' '}
-                <span className="text-span">web developper</span>
+                <span className="text-span">web developer</span>
                 {' '}
                 and UI
                 {' '}
@@ -130,9 +131,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          </div>
         </div>
- </>
+      </div>
+    </>
   );
 };
 
