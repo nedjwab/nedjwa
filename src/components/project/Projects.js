@@ -17,7 +17,7 @@ const Projects = () => {
       <div className='mt-2' >
         <Cards />
       </div>
-      <button className='mx-auto btn' data-aos="flip-right" onClick={openLink}><span>Visit Github</span><i></i></button>
+      <button className='md:lg:xl:mx-auto btn' data-aos="flip-right" onClick={openLink}><span>Visit Github</span><i></i></button>
     </div>
   )
 }

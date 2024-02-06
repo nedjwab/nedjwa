@@ -9,6 +9,7 @@ import pic3 from "../assets/images/l.png";
 import pic4 from "../assets/images/math.PNG";
 import pic5 from "../assets/images/portfolio.PNG";
 import pic6 from "../assets/images/budget.PNG";
+import './Cards.css'
 
 const Card = ({ src, alt, descriptions, githubLink }) => {
   const [flipped, setFlipped] = useState(false);
@@ -165,20 +166,16 @@ const slides = [
   return (
     <>
       <div
-        style={{
-          width: "65%",
-          height: "420px",
-          margin: "30px 0 30px 25%",
-        }}
+        className="custom-div" 
         data-aos="fade-down"
       >
         <Carousel
           slides={slides}
           goToSlide={currentSlide}
-          showNavigation={false} // Hide default navigation
+          showNavigation={false}
         />
       </div>
-      <div>
+      <div className="hidden md:lg:xl:flex">
         {currentSlide > 0 && (
           <ImPrevious 
             style={{

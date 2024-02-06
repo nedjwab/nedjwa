@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+  body {
+    z-index: -1;
+  }
+
+
   .scrolldown {
     --color: white;
     --sizeX: 30px;

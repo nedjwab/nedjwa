@@ -42,7 +42,7 @@ import './hamburger.css';
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-            <ul className="flex flex-col items-center justify-between min-h-[250px] text-lg div mt-96">
+            <ul className="flex flex-col items-center justify-between text-lg div mt-96">
               <li className="my-8 uppercase flex flex-row ">
                 <AiFillHome color="#B9848C" data-aos="fade-in" fill="#ffc2e2" className="mr-4 mt-1" />
                 <a href="/">Home</a>
