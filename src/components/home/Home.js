@@ -23,21 +23,20 @@ AOS.init({
   once: false,
   mirror: false,
   anchorPlacement: 'top-bottom',
-
 });
 
 const Home = () => (
   <>
-  <section className='flex flex-col md:lg:h-128 md:lg:font-Dancing' id="Home">
+  <section className='flex flex-col lg:h-128 lg:font-Dancing' id="Home">
     <Navbar />
-    <div className="mt-0 md:lg:mt-10 text-center container flex flex-col justify-items-center items-center Popins  h-5/6">
-      <div className="md:lg:ml-2">
-        <p data-aos="fade-right" className="text-para text-2xl md:lg:text-5xl ">
+    <div className="mt-0 lg:mt-10 text-center container flex flex-col justify-items-center items-center Popins h-5/6">
+      <div className="lg:ml-2">
+        <p data-aos="fade-right" className="text-para text-xl lg:text-5xl ">
           Hello there,
           This is
           {' '}
           {'\n'}
-          <span className="text-span text-2xl md:lg:text-5xl mb-11 "> Nedjwa.</span>
+          <span className="text-span text-xl lg:text-5xl mb-11 "> Nedjwa.</span>
         </p>
         <div className="h-8 mt-7 mb-4 font-Dancing">
           <Typewriter className="text-5xl"
@@ -46,12 +45,12 @@ const Home = () => (
                 .typeString('<span class="typewriter">UI/UX Designer </span>')
                 .pauseFor(10)
                 .deleteAll()
-                .typeString('<span class="typewriter">Full-Stack web developper </span>')
+                .typeString('<span class="typewriter">Full-Stack web developer </span>')
                 .start();
             }}
           />
         </div>
-        <p data-aos="zoom-in" className="mx-2 text-para text-xl md:lg:text-3xl font-light leading-8 md:lg:leading-10 mt-13 xl:mt-16 mb-16 font-Dancing">
+        <p data-aos="zoom-in" className="mx-2 text-para text-md lg:text-3xl font-light leading-8 lg:leading-10 mt-13 xl:mt-16 mb-16 font-Dancing">
           I&apos;m a
           {' '}
           <span className="text-span">computer scientist</span>
@@ -70,20 +69,17 @@ const Home = () => (
           I can help you build a product , feature or website.
         </p>
       <Link to="#About">       
-       <div class='scrolldown cursor-pointer' data-aos="fade-right"> 
-        <div class="chevrons">
-          <div class='chevrondown'></div>
-          <div class='chevrondown'></div>
+       <div className='scrolldown cursor-pointer' data-aos="fade-right"> 
+        <div className="chevrons">
+          <div className='chevrondown'></div>
+          <div className='chevrondown'></div>
         </div>
       </div>
       </Link>
       </div>
     </div>
- 
   </section>
-  
   </>
 );
 
-
-export default Home
+export default Home;
