@@ -10,7 +10,7 @@ const Projects = () => {
         <h4 className="st-section-heading-title" data-aos="fade-down">WORK</h4>
         <h2 className="st-section-heading-subtitle">WORK</h2>
       </div>
-      <blockquote className="text-lg md:lg:xl:text-xl italic font-Bodoni mt-10 tracking-wide  w-2/4 mx-auto" data-aos="fade-right">
+      <blockquote className="text-center text-sm md:xl:lg:text-xl italic font-Bodoni mt-10 tracking-wide  md:lg:xl:w-2/4 mx-auto" data-aos="fade-right">
       <p className='text-center'>" In the forge of experience, I sculpted a path paved with expertise and fueled by passion,
         crafting a narrative of achievement in every endeavor ".</p>
       </blockquote>
