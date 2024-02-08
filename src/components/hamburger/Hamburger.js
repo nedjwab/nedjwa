@@ -1,38 +1,29 @@
-import React, { useState } from 'react'; // import state
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import {
-  AiFillHome,
-} from 'react-icons/ai';
-import { HashLink as Link } from 'react-router-hash-link';
-import './hamburger.css';
+import { useState } from "react";
 
- const Hamburger = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+const Hamburger = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between py-8 mr-7">
+    <div className=" flex items-center justify-between border-gray-400 py-8">
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden">
-          <button
-            className="HAMBURGER-ICON space-y-2"
-            type="submit"
-            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+        <section className="MOBILE-MENU my-2 mx-4 flex lg:hidden ">
+          <div
+            className="HAMBURGER-ICON space-y-1 text-para"
+            onClick={() => setIsNavOpen((prev) => !prev)}
           >
-            <span className="block h-0.5 w-8 animate-pulse bgh" />
-            <span className="block h-0.5 w-8 animate-pulse bgh" />
-            <span className="block h-0.5 w-8 animate-pulse bgh" />
-          </button>
-
-          <div className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
-            {' '}
-            <button
+            <span className="block bg-para h-1 w-9 animate-pulse bgh "></span>
+            <span className="block bg-para h-1 w-9 animate-pulse bgh "></span>
+            <span className="block bg-para h-1 w-9 animate-pulse bgh "></span>
+          </div>
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+            <div
               className="absolute top-0 right-0 px-8 py-8"
-              type="submit"
               onClick={() => setIsNavOpen(false)}
             >
               <svg
-                className="h-8 w-8 color"
+                className="h-8 w-8 "
                 viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -41,25 +32,58 @@ import './hamburger.css';
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
-            </button>
-            <ul className="flex flex-col items-center justify-between text-lg div mt-96">
-              <li className="my-8 uppercase flex flex-row ">
-                <AiFillHome color="#B9848C" data-aos="fade-in" fill="#ffc2e2" className="mr-4 mt-1" />
-                <a href="/">Home</a>
+            </div>
+            <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/about">About</a>
               </li>
-              <li className="my-8 uppercase color flex flex-row ">
-              <Link to="#About">
-                <span>About</span>
-              </Link>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/portfolio">Portfolio</a>
               </li>
-              <li className="my-8 uppercase color flex flex-row">
-                <BsFillBriefcaseFill color="#B9848C" fill="#ffc2e2" className="ml-9 mr-4 mt-1" />
-                <a href="/" className="color">Projects</a>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/contact">Contact</a>
               </li>
             </ul>
           </div>
         </section>
+
+        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
       </nav>
+      <style>{`
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .white-icon {
+        fill: white; // Change fill color to white
+      }
+      .bgh {
+        background: linear-gradient(to left, #0c002b, #ffc2e2);
+      };
+      `}</style>
     </div>
   );
 }

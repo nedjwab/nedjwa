@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Projects from './components/project/Projects';
 import Contact from './components/contact/Contact';
 import MouseParticles from 'react-mouse-particles';
+import Navbar from './components/navbar/Navbar';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             path="/"
             element={
               <>
+              <Navbar />
                 <Home />
                 <About />
                 <Projects />
