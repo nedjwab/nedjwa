@@ -99,7 +99,15 @@
   
 .sidebar-icon {
   color:#E3D9E0;
+}
+
+.footer-icon {
+  color:white;
+}
+
+.footer-icon,.sidebar-icon:hover {
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: white;
 }
 
 .sidebar-icon:hover {

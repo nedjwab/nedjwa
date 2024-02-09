@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
+import Footer from '../footer/Footer';
 
 const Hamburger = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  useEffect(() => {
+    if (isNavOpen) {
+      // Prevent scrolling when the menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Re-enable scrolling when the menu is closed
+      document.body.style.overflow = 'visible';
+    }
+  }, [isNavOpen]);
+
   return (
-    <div className=" flex items-center justify-between border-gray-400 py-8">
+    <div className="flex items-center justify-between border-gray-400 py-8">
       <nav>
         <section className="MOBILE-MENU my-2 mx-4 flex lg:hidden ">
           <div
@@ -21,9 +33,10 @@ const Hamburger = () => {
               onClick={() => setIsNavOpen(false)}
             >
               <svg
-                className="h-8 w-8 "
+                className="h-8 w-8 white-icon"
                 viewBox="0 0 24 24"
-                fill="none"
+                fill="white"
+                color="white"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -33,31 +46,22 @@ const Hamburger = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">About</a>
-              </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Portfolio</a>
-              </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Contact</a>
-              </li>
+            <ul className="div flex text-para flex-col items-center justify-around min-h-[250px]">
+              <Link to="#About" className='nav-element uppercase border-b border-span-400 text-lg font-Popins' smooth>
+                <span className="hover-effect">About</span>
+              </Link>
+              <Link to="#Projects" className='nav-element uppercase border-b border-span-400 text-lg font-Popin' smooth>
+                <span className="hover-effect">Projects</span>
+              </Link>
+              <Link to="#Contact" className='nav-element uppercase border-b border-span-400 text-lg font-Popin'>
+                <span className="hover-effect">Contact</span>
+              </Link>
             </ul>
+            <Footer />
           </div>
+
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
       </nav>
       <style>{`
       .hideMenuNav {
@@ -70,7 +74,7 @@ const Hamburger = () => {
         height: 100vh;
         top: 0;
         left: 0;
-        background: white;
+        background: black;
         z-index: 10;
         display: flex;
         flex-direction: column;
@@ -82,7 +86,17 @@ const Hamburger = () => {
       }
       .bgh {
         background: linear-gradient(to left, #0c002b, #ffc2e2);
-      };
+      }
+      .div:after {
+        
+        border-top: 3px solid #ffc2e2;
+        border-right: 3px solid #ffc2e2;
+    }
+    .div:before {
+    
+        border-bottom: 3px solid #ffc2e2;
+        border-left: 3px solid #ffc2e2;
+    }
       `}</style>
     </div>
   );
