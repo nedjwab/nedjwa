@@ -1,6 +1,5 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import Navbar from '../navbar/Navbar';
 import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -28,7 +27,7 @@ AOS.init({
 const Home = () => (
   <>
   <section className='flex flex-col lg:h-128 lg:font-Dancing' id="Home">
-    <Navbar />
+    
     <div className="mt-0 lg:mt-10 text-center container flex flex-col justify-items-center items-center Popins h-5/6">
       <div className="lg:ml-2">
         <p data-aos="fade-right" className="text-para text-xl lg:text-5xl ">

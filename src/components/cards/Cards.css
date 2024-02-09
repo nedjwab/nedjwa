@@ -1,0 +1,16 @@
+.custom-div {
+    width: 65%;
+    height: 420px;
+    margin: 30px 0 30px 25%;
+  }
+
+
+
+  @media (max-width: 640px) {  
+    .custom-div {
+        width: 87%;
+        height: 420px;
+        margin:0 15%;
+      }
+    
+  }
