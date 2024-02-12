@@ -4,7 +4,33 @@
     margin: 30px 0 30px 25%;
   }
 
+  .imPreviousButton {
+    position: absolute;
+    left: 13%;
+    top: 59%;
+    padding: 12px;
+    font-size: 70px;
+    transform: translateY(-50%);
+    color: #B9848C;
+    cursor: pointer;
+    order: 1;
+  }
+  
+  .imPreviousButton:hover,.imNextButton:hover {
+    color: white;
+  }
 
+  .imNextButton {
+    position: absolute;
+    right: 12%;
+    top: 59%;
+    padding: 12px;
+    font-size: 70px;
+    transform: translateY(-50%);
+    color: "#B9848C";
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
 
   @media (max-width: 640px) {  
     .custom-div {
@@ -12,5 +38,13 @@
         height: 420px;
         margin:0 15%;
       }
-    
+    .imPreviousButton {
+      top:75%;
+      font-size: 50px;
+    }
+    .imNextButton { 
+      top:75%;
+      font-size: 50px;
+    }
+  
   }

@@ -14,7 +14,7 @@ const Projects = () => {
       <p className='text-center'>" In the forge of experience, I sculpted a path paved with expertise and fueled by passion,
         crafting a narrative of achievement in every endeavor ".</p>
       </blockquote>
-      <div className='mt-2' >
+      <div className='mt-2'>
         <Cards />
       </div>
       <button className='md:lg:xl:mx-auto btn' data-aos="flip-right" onClick={openLink}><span>Visit Github</span><i></i></button>

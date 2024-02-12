@@ -89,7 +89,7 @@ const slides = [
         src={pic1}
         alt="1"
         descriptions={[
-          "a music festival website. This project consists of four sections and a link to an about page. I added some cool animation and transitions using CSS. Also, I made a hamburger button for the mobile version using javascript. the Dj's section is added dynamically using javaScript also well.",
+          "a music festival website. This project consists of four sections. I added some cool animation and transitions using CSS. the Dj's section is added dynamically using javaScript also well.",
         ]}
         githubLink="https://github.com/nedjwab/E-ticket-Capstone"
       />
@@ -165,7 +165,14 @@ const slides = [
 
   return (
     <>
-      <div
+      <div className="md:lg:xl:flex">
+        {currentSlide > 0 && (
+          <ImPrevious className="imPreviousButton"
+            onClick={handlePrevious}
+            onMouseOver={(e) => e.target.style.color = "white"} 
+          />
+        )}
+          <div
         className="custom-div" 
         data-aos="fade-down"
       >
@@ -175,36 +182,9 @@ const slides = [
           showNavigation={false}
         />
       </div>
-      <div className="hidden md:lg:xl:flex">
-        {currentSlide > 0 && (
-          <ImPrevious 
-            style={{
-              position: "absolute",
-              left: "13%",
-              top: "59%",
-              padding: "12px",
-              fontSize: "70px",
-              transform: "translateY(-50%)",
-              color: "#B9848C",
-              cursor: "pointer",
-            }}
-            onClick={handlePrevious}
-            onMouseOver={(e) => e.target.style.color = "white"} 
-          />
-        )}
         {currentSlide < slides.length - 1 && (
           <ImNext
-            style={{
-              position: "absolute",
-              right: "12%",
-              top: "59%",
-              padding: "12px",
-              fontSize: "70px",
-              transform: "translateY(-50%)",
-              color: "#B9848C",
-              cursor: "pointer",
-              transition: "background 0.3s ease"
-            }}
+            className="imNextButton"
             onClick={handleNext}
             onMouseOver={(e) => e.target.style.color = "white"} 
           />
