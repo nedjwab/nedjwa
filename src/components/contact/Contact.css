@@ -179,13 +179,16 @@
 
 
 @media (max-width: 640px) { 
+  body {
+    overflow-y: hidden;
+  }
   .background .container {
-    width: 20%;
+    width: 10%;
+    margin: auto;
    
   }
-
   .screen {
-    width: 64%;
+    width: 62%;
   }
 
   .background {
@@ -205,5 +208,4 @@
   .app-form-group {
     margin-top: 5px;
   }
-  
 }
