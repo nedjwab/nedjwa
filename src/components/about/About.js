@@ -30,14 +30,14 @@ const About = () => {
         <h2 className="st-section-heading-subtitle">ABOUT</h2>
       </div>
       <div className='flex flex-col-reverse md:lg:xl:flex-row md:lg:xl:mt-14 relative md:flex-row ml-8 md:lg:xl:ml-36'>
-        <div className="w-full md:w-80 mt-2 mr-0 md:mr-16 md:lg:xl:mt-14">
-          <div className='img hidden md:xl:lg:flex mt-4'>
-            <img className="logo-pic rounded-full absolute w-1/4" data-aos="fade-right" src={pic} alt="logo" />
+        <div className="w-full md:w-80 mt-2 mr-0 lg:xl:mt-14 md:mr-16 md:mt-20">
+          <div className='img hidden md:flex xl:lg:2xl:flex mt-4'>
+            <img className="logo-pic rounded-full absolute md:w-2/6 lg:xl:w-1/4" data-aos="fade-right" src={pic} alt="logo" />
           </div>
           <button 
             onClick={onButtonClick} 
             type="submit" 
-            className='mt-0 mx-auto relative top-1 md:top-48 md:left-52 flex flex-row justify-center items-center absolute  rounded-2xl md:lg:xl:rounded-full w-24 h-16 md:lg:xl:h-24 px-3 bg-blu text-para font-Dancing font-bold text-base' 
+            className='mt-0 mx-auto relative top-1 md:top-96 md:left-8 lg:top-48 lg:left-52 flex flex-row justify-center items-center absolute  rounded-2xl md:rounded-full w-24 h-16 md:lg:xl:h-24 px-3 bg-blu text-para font-Dancing font-bold text-base' 
             data-aos="fade-down-right"
             style={{ boxShadow: '2px 0px 4px #94C0D0' , transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out'}}
             onMouseEnter={(e) => {

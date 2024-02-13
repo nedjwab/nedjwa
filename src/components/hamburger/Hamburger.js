@@ -7,10 +7,8 @@ const Hamburger = () => {
 
   useEffect(() => {
     if (isNavOpen) {
-      // Prevent scrolling when the menu is open
       document.body.style.overflow = 'hidden';
     } else {
-      // Re-enable scrolling when the menu is closed
       document.body.style.overflow = 'visible';
     }
   }, [isNavOpen]);
