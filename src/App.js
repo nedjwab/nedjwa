@@ -7,8 +7,12 @@ import Projects from './components/project/Projects';
 import Contact from './components/contact/Contact';
 import MouseParticles from 'react-mouse-particles';
 import Navbar from './components/navbar/Navbar';
+import ReactGA from 'react-ga';
 
 const App = () => {
+
+  ReactGA.initialize('G-NSBRC3JN2S');
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div className="App">
       <>
