@@ -3,6 +3,8 @@ import "./Contact.css";
 import { VscSend } from "react-icons/vsc";
 import { PiArrowBendDownRightLight } from "react-icons/pi";
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -11,6 +13,7 @@ const Contact = () => {
     emailjs.sendForm('service_xu48twt','template_bsoxbk3', e.target,'DvK5mrzkKutuIxbbY')
       .then((result) => {
         console.log(result.text);
+        toast("Email Sent! Thank you ✨");
       }, (error) => {
         console.log(error.text);
       });
@@ -54,10 +57,10 @@ const Contact = () => {
               <div className="screen-body-item">
                 <div className="app-form">
                   <div className="app-form-group text-para">
-                    <input className="app-form-control" name="name" type="text" placeholder="Name"/>
+                    <input className="app-form-control" id="name" name="name" type="text" placeholder="Name"/>
                   </div>
                   <div className="app-form-group">
-                    <input className="app-form-control" name="email" type="email" placeholder="EMAIL" />
+                    <input className="app-form-control"  id="email" name="email" type="email" placeholder="EMAIL" />
                   </div>
                   <div className="app-form-group message">
                     <input
@@ -81,6 +84,7 @@ const Contact = () => {
         </div>
       </div>
       </div>
+      <ToastContainer theme="dark" />
       <div className="credits bg-blu bg-opacity-5 font-bold">
             @2024 - <span className='text-blu font-Bodoni mr-1'>Nedjwa</span>
              {''}
