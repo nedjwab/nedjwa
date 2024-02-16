@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -60,7 +61,7 @@ const Contact = () => {
                     <input className="app-form-control" id="name" name="name" type="text" placeholder="Name"/>
                   </div>
                   <div className="app-form-group">
-                    <input className="app-form-control"  id="email" name="email" type="email" placeholder="EMAIL" />
+                    <input className="app-form-control"  id="email" name="email" type="email" placeholder="EMAIL"/>
                   </div>
                   <div className="app-form-group message">
                     <input
